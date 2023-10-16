@@ -1,0 +1,25 @@
+const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+function rot13(str) {
+
+  //create accumulator
+  let accumulator = '';
+  //loop through the string
+  for(let i=0; i < str.length; i++){
+
+    //if character is not letter then simply add to accumulator
+    const char = str[i];
+    const isALetter = alphabet.includes(char);
+    if (isALetter===false){
+      accumulator += char;
+    }
+    // else substract or add 13 indices and add to accumulator
+    else{
+      const charIndex = alphabet.findIndex((c) => c === char);
+      accumulator+= alphabet [charIndex+13] || alphabet[charIndex-13];
+    }
+  }
+    //return accumulator
+  return accumulator;
+}
+rot13("SERR PBQR PNZC");
