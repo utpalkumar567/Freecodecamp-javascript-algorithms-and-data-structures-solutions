@@ -1,1 +1,1 @@
-# Freecodecamp-javascript-algorithms-and-data-structures-solutions
+This repository contains the solution to the certification problems of Freecodecamp's JavaScript algorithm and data structure. These solutions are efficient and easy to understand. Please use these solutions only to get an overall understanding of the problem. Do not copy and paste to get the certification.
